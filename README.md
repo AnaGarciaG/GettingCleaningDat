@@ -22,9 +22,10 @@ run_analysis()
 
 During the execution, several messages and feedback are displayed.  
 
-### If everithing is correct, the execution generate onn the console following messages:
->source("run_analysis.R")
->run_analysis()
+### If everithing is correct, the execution generate on the console following messages:
+source("run_analysis.R")  
+run_analysis()  
+
 1. Merges the training and the test sets to create one data set.  
     reading X_test table...  
     reading X_train table...  
@@ -41,8 +42,8 @@ During the execution, several messages and feedback are displayed.
     merge...  
     Write file tidy_data.txt on the destination folder ./UCI HAR Dataset/merge . 
 
-### In case of error the execution is broken.  An error message is displayed.
+### In case of error the execution is broken and an error message is displayed.
 run_analysis(sourceDir = "./incorrectFolder")
 
-Error in run_analysis(sourceDir = "./incorrectFolder") : 
+Error in run_analysis(sourceDir = "./incorrectFolder") :   
   Folder 'UCI HAR Dataset' not found
