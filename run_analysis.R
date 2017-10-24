@@ -95,6 +95,5 @@ run_analysis <- function(sourceDir = "./UCI HAR Dataset", destinationDir = "./UC
   tidy_data <- aggregate(. ~subject + activity, xmergemeanstdactsub, mean)
   # Write the tida_data table on the destination folder
   print(paste("    Write file tidy_data.txt on the destination folder", destinationDir))
-  write.table(subjectmerge, paste(destinationDir,"/","tidy_data.txt", sep = ""))
-  
+  write.table(tidy_data, paste(destinationDir,"/","tidy_data.txt", sep = ""))
 }       
