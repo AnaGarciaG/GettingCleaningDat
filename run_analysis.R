@@ -1,4 +1,4 @@
-run_analysis <- function(sourceDir = "./UCI HAR Dataset", destinationDir = "./UCI HAR Dataset/merge"){
+run_analysis <- function(sourceDir = "./UCI HAR Dataset", destinationDir = "./"){
   
   # Verify that the source directory exist.  If the destination directory is created if does not exist
   if (!file.exists(sourceDir)) stop ("Folder 'UCI HAR Dataset' not found")
@@ -95,5 +95,5 @@ run_analysis <- function(sourceDir = "./UCI HAR Dataset", destinationDir = "./UC
   tidy_data <- aggregate(. ~subject + activity, xmergemeanstdactsub, mean)
   # Write the tida_data table on the destination folder
   print(paste("    Write file tidy_data.txt on the destination folder", destinationDir))
-  write.table(tidy_data, paste(destinationDir,"/","tidy_data.txt", sep = ""))
+  write.table(tidy_data, paste(destinationDir,"/","tidy_data.txt", sep = ""),row.name=FALSE)
 }       
