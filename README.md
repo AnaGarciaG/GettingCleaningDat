@@ -46,4 +46,4 @@ run_analysis()
 run_analysis(sourceDir = "./incorrectFolder")
 
 Error in run_analysis(sourceDir = "./incorrectFolder") :   
-  Folder 'UCI HAR Dataset' not found
+    Folder 'UCI HAR Dataset' not found  
