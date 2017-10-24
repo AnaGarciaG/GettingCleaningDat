@@ -32,7 +32,7 @@ Several new variables has been created to store the intermedial results of the s
 
 * features <- original values read from 'features.txt'
 * meancol, stdcol <- subset of features with only the column names for mean and standard desviation variables
-xmergemeanstd <- contains the result only for the measurements on the mean and standard deviation for each measurement 
+* xmergemeanstd <- contains the result only for the measurements on the mean and standard deviation for each measurement 
 
 * ytrain <- contains the original values read from 'train/y_train.txt'
 * ytest <- original values read fromm test/y_test.txt'
